@@ -1,0 +1,19 @@
+{
+    "name": "prospeak/lbtcapi",
+    "description": "This a Laravel Package for Localbitcoin API services",
+    "require": {
+        "laravel/framework": "^8.0@dev"
+    },
+    "authors": [
+        {
+            "name": "Younes Masaoudi",
+            "email": "younesmasaoudi1@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Prospeak\\Lbtcapi\\": "src/"
+        }
+    }
+}
