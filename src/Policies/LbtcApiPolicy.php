@@ -41,9 +41,9 @@ class LbtcApiPolicy
             $method,
             $endpoint,
             [
-                $method == 'GET' ? 'query' : 'form_params' => $opt,
+                $method == 'GET' || empty($opt) ? "query" : "form_params" => $opt,
                 'headers' => [
-                    'content-type' => 'application/x-www-form-urlencoded',
+                    'Content-Type' => 'application/x-www-form-urlencoded',
                     'Apiauth-Key' => $key,
                     'Apiauth-Nonce' => $API_AUTH_NONCE,
                     'Apiauth-Signature' => $signature
