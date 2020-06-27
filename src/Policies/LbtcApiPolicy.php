@@ -51,7 +51,6 @@ class LbtcApiPolicy
 
             ]
         );
-        $data = json_decode($response->getBody()->getContents());
-        return response()->json([$data], 200);
+        return json_decode($response->getBody()->getContents());
     }
 }
