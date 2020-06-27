@@ -14,12 +14,13 @@ class LbtcApiPolicy
      *
      * @return void
      */
-    public function __construct()
-    {
-        $endpoint = $this->endpoint;
-        $method = $this->method;
-        $opt = $this->opt;
-    }
+    
+//     public function __construct()
+//     {
+//         $endpoint = $this->endpoint;
+//         $method = $this->method;
+//         $opt = $this->opt;
+//     }
     static function apis($endpoint, $method, $opt = null)
     {
         $key = config('lbtcapi.key');
